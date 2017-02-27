@@ -2,6 +2,8 @@ Hi there! Welcome to Rover!
 
 To get started:
 
+Clone or download the repo, navigate to the folder.
+
 1) Open the hello-rover.html file (in chrome), for optimal experience, we recommend a 13inch+ screen
 
 2) Enter a command sequence:
