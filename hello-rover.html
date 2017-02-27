@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Rover</title>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link href="./styles.css" rel="stylesheet">
+	<script src="./rover.js"></script>
+
+</head>
+
+<body>
+	<div id="mainContent" class='row container-fluid'>
+		<!--left panel-->
+		<div class="col-xs-7"> 	
+			<h3>Map</h3>
+			<div id="scale">
+				scale: 
+			</div>
+			<div id="canvasContainer" >
+				<!--canvas loaded here-->
+			</div>
+		</div>
+		<!--right panel-->
+		<div class="col-xs-5">
+			<div class="row container-fluid" id="control">
+				<h3>Mission Control:</h3>
+					<input id='cmd' type="text" placeholder="Command: i.e. LMMMMM" oninput="validateCommand()" />
+					<input class="button" type="button" id='submit' onClick="roverController()" value="Go!" />
+				<br/>
+					<div id="msg" style="display: none;">Invalid Command: must only contain L,R,M </div>
+				<br/>
+					<input class="button" type="button" onClick="reset()" value="Reset" />
+					<input class="button" type="button" onClick="undo()" value="Undo" />
+			</div>
+			<div class="row container-fluid">
+				<h3>Rover Location Feed:</h3>
+				<div id="output">
+					<!--location feed here-->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html

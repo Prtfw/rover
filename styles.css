@@ -1,0 +1,65 @@
+body,
+html {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+}
+
+#mainContent {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: rgba(183, 37, 14, .7);
+    border-radius: 4px;
+    padding: 30px;
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+    border: thin solid darkslategrey;
+    padding: 5px;
+    background-color: rgba(14, 132, 183, .7);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+    width: 75px;
+    margin: 20px;
+    display: inline-block;
+}
+
+#cmd {
+    width: 300px;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+canvas {
+    border: 1px solid orange;
+}
+
+#output {
+    position: absolute;
+    top: 45vh;
+    bottom: 0;
+    right: 0;
+    overflow-y: scroll;
+    width: 100%;
+    height: 45vh;
+    border: 1px solid orange;
+}
+
+#canvasContainer {
+    height: 100vh;
+}
+
+#control {
+    border: 1px solid orange;
+}
+
+#msg {
+    color: red;
+    padding: 10px;
+    background-color: darkslategrey;
+}
