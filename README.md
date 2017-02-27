@@ -2,7 +2,7 @@ Hi there! Welcome to Rover!
 
 To get started:
 
-Clone or download the repo, navigate to the folder.
+Clone or download the repo, navigate to the folder. Or click on this link: https://prtfw.github.io/rover/ .
 
 1) Open the hello-rover.html file (in chrome), for optimal experience, we recommend going full screen on a 13inch+ screen
 
