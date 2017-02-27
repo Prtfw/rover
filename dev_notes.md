@@ -39,7 +39,8 @@ Breakdown:
 Tests:
 
 	1. a+b == c == x+y+z: (LMM,RMM, LMMM) = (LMMRMMLMMM) = (LMMRMM, LMMM)
-	2. direction tests: MMM=[0,-3]
+	2. direction tests: L&R sequence
+	3. axis tests: MMM=[0,-3]
 
 Refactor/Optimization 1:
 
@@ -76,7 +77,7 @@ Final Visual Testing: (includes same tests as above)
 
 	1. a+b = c = x+y+z
 	2. direction tests
-	3. M length test (testing optimization 1, multiple "M"s = one move)
+	3. M length/sequence test (testing optimization 1, multiple "M"s = one move)
 	4. scale test (giant command sequence, assume the previous test are passing this one is only to validate performance)
 	
 =====>>>>>>>>>>>>>>>>
