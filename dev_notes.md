@@ -6,18 +6,18 @@ Basic Requirments:
 
 Approach: Declarative
 
-        Why?:
+    Why?:
 
-            - object oriented? possible overkill = no mention of multiple rovers or interactions with other objects, more suitable if we need to scale.
-            - functional? possible overkill = no concurrency requirements, user commands are executed in sequence (result is sequence dependent), no requirement for multiple users to work on the same rover, low risk to maintain and mutate state
-            - declarative: fast, simple, readable code
+	    - object oriented? possible overkill = no mention of multiple rovers or interactions with other objects, more suitable if we need to scale.
+	    - functional? possible overkill = no concurrency requirements, user commands are executed in sequence (result is sequence dependent), no requirement for multiple users to work on the same rover, low risk to maintain and mutate state
+	    - declarative: fast, simple, readable code
 
-        State/Variables:
+    State/Variables:
 
-            - current direction
-            - current x,y coordinate: depends on direction (for signs i.e. for y-ax North = Positive) and number of “M”/moves
-            - as object: easier to use (i.e. can use dot notation state.x, state.y, instead of state[0], state[1], easier typing, less chance of “off by 1 errors”)
-            - history? (might be useful for rolling back, or graphing if UI is implemented) => implement if using canvas for UI
+	    - current direction
+	    - current x,y coordinate: depends on direction (for signs i.e. for y-ax North = Positive) and number of “M”/moves
+	    - as object: easier to use (i.e. can use dot notation state.x, state.y, instead of state[0], state[1], easier typing, less chance of “off by 1 errors”)
+	    - history? (might be useful for rolling back, or graphing if UI is implemented) => implement if using canvas for UI
 
 Breakdown:
 
