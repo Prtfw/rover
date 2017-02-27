@@ -15,6 +15,7 @@ To get started:
 4) You can click the [undo] button to rollback your action(s) or hit the [reset] button to start from the begining [0,0] facing South
 
 Happy Exploring!
+
 The Rover Team
 
 
